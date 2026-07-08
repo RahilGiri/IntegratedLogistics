@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Integrated Logistics</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js" defer></script>
+</head>
+<body id="top">
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Integrated Logistics" style="height: 60px;">
+            </a>
+            <nav class="navbar">
+                <div class="navbar-top">
+                    <img src="images/logo.png" alt="Integrated Logistics" style="height: 50px;">
+                    <button class="nav-close-btn" aria-label="Close menu"><ion-icon name="close-outline"></ion-icon></button>
+                </div>
+                <ul class="navbar-list">
+                    <li><a href="index.html" class="navbar-link">Home <ion-icon name="chevron-forward"></ion-icon></a></li>
+                    <li><a href="about.html" class="navbar-link">About <ion-icon name="chevron-forward"></ion-icon></a></li>
+                    <li><a href="services.html" class="navbar-link">Services <ion-icon name="chevron-forward"></ion-icon></a></li>
+                    <li><a href="network.html" class="navbar-link">Network <ion-icon name="chevron-forward"></ion-icon></a></li>
+                    <li><a href="gallery.html" class="navbar-link active">Gallery <ion-icon name="chevron-forward"></ion-icon></a></li>
+                    <li><a href="contact.html" class="navbar-link">Contact <ion-icon name="chevron-forward"></ion-icon></a></li>
+                </ul>
+            </nav>
+            <div class="header-contact">
+                <div>
+                    <p class="contact-label">For inquiry</p>
+                    <a href="tel:8295048698" class="contact-number"><span>8295048698</span> 9818553144</a>
+                </div>
+                <a href="tel:8295048698" class="contact-icon"><ion-icon name="call-outline"></ion-icon></a>
+            </div>
+            <button class="nav-open-btn" aria-label="Open menu"><ion-icon name="menu-outline"></ion-icon></button>
+            <div class="overlay"></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header" data-aos="fade-in" data-aos-duration="1000">
+            <div class="container">
+                <h1 data-aos="zoom-in" data-aos-delay="200">Our Gallery</h1>
+                <p data-aos="fade-up" data-aos-delay="400">Glimpses of our operations and fleet across India.</p>
+            </div>
+        </section>
+
+        <!-- Gallery Grid -->
+        <section class="section">
+            <div class="container">
+                
+                <div class="gallery-filter" data-aos="fade-up">
+                    <button class="filter-btn active">All</button>
+                    <button class="filter-btn">Fleet</button>
+                    <button class="filter-btn">Warehouse</button>
+                    <button class="filter-btn">Operations</button>
+                </div>
+
+                <div class="gallery-grid" data-aos="fade-up" data-aos-delay="200">
+                    <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1519003722824-194d4455a60c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')">
+                        <img src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Fleet on highway">
+                        <div class="gallery-overlay"><h3>Highway Operations</h3></div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')">
+                        <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Warehouse inside">
+                        <div class="gallery-overlay"><h3>Warehouse Storage</h3></div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')">
+                        <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Loading docks">
+                        <div class="gallery-overlay"><h3>Loading Docks</h3></div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1587293852726-0d4586be168c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')">
+                        <img src="https://images.unsplash.com/photo-1587293852726-0d4586be168c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cardboard boxes">
+                        <div class="gallery-overlay"><h3>Packaging</h3></div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1578575437130-527eed3abbec?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')">
+                        <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Forklift working">
+                        <div class="gallery-overlay"><h3>Forklift Operations</h3></div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')">
+                        <img src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Logistics Network">
+                        <div class="gallery-overlay"><h3>Supply Chain</h3></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox(event)">
+        <div class="lightbox-close"><ion-icon name="close-outline"></ion-icon></div>
+        <div class="lightbox-content" id="lightbox-img"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="Integrated Logistics" style="height: 60px; filter: brightness(0) invert(1);">
+                    </div>
+                    <p class="footer-text">
+                        Safe. Economic. Fast. Around the Nation... Round the Clock.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-list">
+                        <li><a href="about.html" class="footer-link"><ion-icon name="chevron-forward"></ion-icon> About Us</a></li>
+                        <li><a href="services.html" class="footer-link"><ion-icon name="chevron-forward"></ion-icon> Services</a></li>
+                        <li><a href="network.html" class="footer-link"><ion-icon name="chevron-forward"></ion-icon> Our Network</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Regd. Office</h4>
+                    <ul class="footer-list">
+                        <li class="footer-link"><ion-icon name="location-outline" style="font-size:1.5rem;"></ion-icon> Plot No. 79, Gali No. 2, Ganesh Nagar, Delhi Road, Hissar – 125001</li>
+                        <li class="footer-link"><ion-icon name="call-outline"></ion-icon> 82950-48698, 98185-53144</li>
+                        <li class="footer-link"><ion-icon name="mail-outline"></ion-icon> integratedlogistics2018@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; <span id="year"></span> Integrated Logistics. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
